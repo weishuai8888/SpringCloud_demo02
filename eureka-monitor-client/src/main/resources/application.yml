@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: service-turbine
+server:
+  port: 8769
+turbine:
+  cluster-name-expression: new String("default") #默认为服务名的集群
+  aggregator:
+    cluster-config: default #配置了监控的服务名
+  app-config: eureka-ribbon-client,eureka-feign-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
