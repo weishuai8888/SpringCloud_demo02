@@ -44,6 +44,25 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!--Actuator的起步依赖-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+			<version>2.0.5.RELEASE</version>
+		</dependency>
+		<!--Hystrix Dashboard的起步依赖-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+			<version>1.4.5.RELEASE</version>
+		</dependency>
+		<!--Hystrix的起步依赖-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-hystrix</artifactId>
+			<version>1.4.5.RELEASE</version>
+		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>

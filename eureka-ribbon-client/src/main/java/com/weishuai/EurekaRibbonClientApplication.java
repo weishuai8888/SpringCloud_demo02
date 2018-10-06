@@ -15,7 +15,7 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @SpringBootApplication
 @EnableEurekaClient
 @EnableHystrix
-@EnableHystrixDashboard
+@EnableHystrixDashboard//开启HystrixDashboard的功能（监控熔断器状态）
 public class EurekaRibbonClientApplication {
 
 	public static void main(String[] args) {
