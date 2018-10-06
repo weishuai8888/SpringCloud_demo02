@@ -1,0 +1,11 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8764 #设置Eureka Client的服务端口为8764
+
+spring:
+  application:
+    name: eureka-client #指明应用的名字为eureka-client-copy
