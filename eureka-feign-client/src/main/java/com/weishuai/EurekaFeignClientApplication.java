@@ -9,7 +9,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * 声明式调用feign（自带负载均衡）
- * 在RestTemplate和Ribbon上使用熔断器
+ * 在feign上使用熔断器
  * 使用Hystrix Dashboard监控熔断器的状态（端口号不匹配，没成功）
  */
 @SpringBootApplication
