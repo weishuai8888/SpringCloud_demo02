@@ -1,0 +1,30 @@
+#将server1的service-url设置为server2，将server2的设置为server1.以此完成两个server服务间的相互注册
+spring:
+  application:
+    name: EurekaServer #服务命名(用于指定注册到Eureka Server上的应用名称)
+---
+spring:
+  profiles: peer1 #实际开发中对应具体的服务器的IP地址
+server:
+  port: 8761  #指定Eureka端口号
+eureka:
+  instance:
+    hostname: peer1
+  client:
+#    register-with-eureka: true #是否避免Eureka自己注册自己
+#    fetch-registry: true #是否从Eureka上货去注册信息
+    service-url:
+      defaultZone: http://peer2:8762/eureka/
+---
+spring:
+  profiles: peer2 #实际开发中对应具体的服务器的IP地址
+server:
+  port: 8762  #指定Eureka端口号
+eureka:
+  instance:
+    hostname: peer2
+  client:
+#    register-with-eureka: true #是否避免Eureka自己注册自己
+#    fetch-registry: true #是否从Eureka上货去注册信息
+    service-url:
+      defaultZone: http://peer1:8761/eureka/
