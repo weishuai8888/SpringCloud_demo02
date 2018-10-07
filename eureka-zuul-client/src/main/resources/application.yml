@@ -7,7 +7,7 @@ server:
 spring:
   application:
     name: service-zuul
-zuul:
+zuul:  #Zuul路由配置的写法
   routes:
     hiapi:
       path: /hiapi/**
@@ -18,3 +18,4 @@ zuul:
     feignapi:
       path: /feignapi/**
       serviceId: eureka-feign-clients
+  prefix: /v1  #在Zuul上配置api接口的版本

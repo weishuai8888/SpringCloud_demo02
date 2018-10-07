@@ -11,3 +11,4 @@ eureka-feign-client:声明式调用feign（自带负载均衡）
     使用Hystrix Dashboard监控熔断器的状态（端口号不匹配，没成功）
 eureka-monitor-client:使用Turbine聚合监控
 eureka-zuul-client:搭建Zuul服务
+    在Zuul上配置api接口的版本
