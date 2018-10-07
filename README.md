@@ -13,3 +13,4 @@ eureka-monitor-client:使用Turbine聚合监控
 eureka-zuul-client:搭建Zuul服务
     在Zuul上配置api接口的版本
     在Zuul上配置熔断器（未成功）
+    Zuul中使用过滤器
