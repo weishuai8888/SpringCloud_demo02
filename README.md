@@ -12,3 +12,4 @@ eureka-feign-client:声明式调用feign（自带负载均衡）
 eureka-monitor-client:使用Turbine聚合监控
 eureka-zuul-client:搭建Zuul服务
     在Zuul上配置api接口的版本
+    在Zuul上配置熔断器（未成功）

@@ -7,6 +7,8 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
  * 搭建Zuul服务
+ * 在Zuul上配置api接口的版本
+ * 在Zuul上配置熔断器（未成功）
  */
 @SpringBootApplication  //表明自己是一个SpringBoot工程
 @EnableEurekaClient  //开启EurekaClient功能
